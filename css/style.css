@@ -1,0 +1,430 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none!important;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a, span {
+  display: inline-block;
+  color: #fff;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+.d-flex {
+  flex-wrap: wrap;
+}
+
+.align-center {
+  align-items: center;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: 'Lato-Bold';
+  margin-bottom: 22px;
+}
+
+h4 {
+  font-size: 24px;
+  color: #FDDE77;
+  font-family: 'Lato-Bold';
+}
+
+.title-1,
+.text-cl {
+  color: #553515;
+}
+
+.title-2 {
+  color: #FDDE77;
+}
+
+.f-bold {
+  font-family: 'Lato-Bold'; 
+}
+
+.thumb-img {
+  padding-top: 100%;
+  position: relative;
+  display: block;
+}
+
+.thumb-img .global-figure {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.thumb-img .global-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.thumb-img .global-image span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center center!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+}
+
+.block-ct-full {
+  background: #553515;
+  color: #fff;
+}
+
+.img-responsive {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 1300px) {
+  .container {
+      max-width: 1270px;
+  }
+}
+
+/*fonts*/
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url(../fonts/Lato-Regular.ttf);
+}
+
+body {
+    background: #fff;
+    color: #767676;
+    font-family: 'Lato-Regular';
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+.top-header {
+  padding: 22px 0;
+}
+
+.main-header {
+  max-width: 1420px;
+  margin: 0 auto 30px;
+  width: 100%;
+  border-top: 1px solid #EBEAEA;
+  border-bottom: 1px solid #EBEAEA;
+}
+
+.main-header.fixed-top {
+  position: fixed;
+  z-index: 1111;
+  background: #fff;
+  top: 0;
+  left: 0;
+  border: none;
+  box-shadow: 0 4px 2px -2px #EBEAEA;
+}
+
+.navbar-collapse {
+  justify-content: center!important;
+}
+
+.navbar-nav li a {
+  font-size: 16px;
+  font-family: 'Lato-Bold'!important;
+  color: #000!important;
+}
+
+.navbar-nav li:not(:last-child) {
+  margin-right: 60px;
+}
+
+.main-banner .thumb-img {
+  padding-top: 36.5%;
+}
+
+.main-banner .text-desc {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-banner .text-desc h2 {
+  font-size: 80px;
+  color: #fff;
+  line-height: 1em;
+}
+
+.main-banner .text-desc h2 span {
+  font-size: 48px;
+  display: block;
+}
+
+.block-ct {
+  padding: 45px 0;
+}
+
+.block-ct p {
+  line-height: 1.6em;
+}
+
+/*luck lottery*/
+.block-ct .sm-section-1 {
+  margin-bottom: 50px;
+}
+
+.block-ct .sm-section p:not(:last-child),
+.block-ct .sm-section ul {
+  margin-bottom: 45px;
+}
+
+.block-ct .sm-section ul {
+  list-style: disc;
+  text-align: left;
+  margin-left: 130px;
+}
+
+.block-ct .sm-section ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+#luck-lottery > .block-ct {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.block-ct .sm-section-1 table {
+  margin: 0 auto;
+  font-size: 18px;
+  max-width: 980px;
+  font-family: 'Lato-Bold';
+}
+
+.block-ct .sm-section-1 table tbody tr td {
+  text-align: right;
+}
+
+.block-ct .sm-section-1 table thead tr th,
+.block-ct .sm-section-1 table tbody tr td:first-child {
+  text-align: left;
+}
+
+.block-ct .sm-section-1 table thead tr th {
+  line-height: 1.3em;
+}
+
+.block-ct .sm-section-1 table thead tr th:first-child {
+  width: 176px;
+}
+
+/*governance*/
+.governance p:not(:last-child) {
+  margin-bottom: 45px;
+}
+
+/*about us*/
+
+.about-us .item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.about-us .item-sp h4 {
+  font-size: 30px;
+}
+
+.about-us .item {
+  max-width: 1180px;
+}
+
+.chart img {
+  max-width: 100%;
+}
+
+/*pillar*/
+
+.pillar > p {
+  margin-bottom: 50px;
+}
+
+.list-pillar {
+  justify-content: center;
+}
+
+.list-pillar .item:not(:last-child) {
+  margin-right: 170px;
+}
+
+.list-pillar .item img {
+  margin-bottom: 25px;
+}
+
+/*partner*/
+.partners {
+  padding-bottom: 80px;
+}
+
+.partners > h3 {
+  margin-bottom: 45px;
+}
+
+.list-partner .box-img {
+  flex: 0 0 276px;
+  max-width: 276px;
+  text-align: center;
+}
+
+.list-partner .box-desc {
+  flex: 0 0 calc(100% - 276px);
+  max-width: calc(100% - 276px);
+  padding-left: 40px;
+}
+
+.list-partner .item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.list-partner .item-1 img {
+  margin-top: 15px;
+}
+
+/*contact us*/
+.contact-us > p {
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 465px;
+  margin: 0 auto;
+}
+
+.contact-form .box-input {
+  position: relative;
+}
+
+.contact-form .box-input img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+}
+
+.contact-form .box-input.user-name img {
+  margin-top: 5px;
+}
+
+.contact-form .box-input input {
+  padding-left: 60px;
+}
+
+.contact-form .box-input .form-control {
+  font-size: 18px;
+  background: #EBEAEA;
+  color: #553515;
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 12px;
+}
+
+.contact-form .box-input input.form-control,
+.contact-form .btn-submit {
+  height: 54px;
+}
+
+.contact-form .box-input .form-control:focus {
+  box-shadow: none;
+}
+
+.contact-form .box-input .form-control::placeholder {
+  color: #553515;
+  opacity: 1;
+}
+
+.contact-form .box-input .form-control:-ms-input-placeholder { 
+  color: #553515;
+}
+
+.contact-form .box-input .form-control::-ms-input-placeholder {
+  color: #553515;
+}
+
+.contact-form .box-input textarea.form-control {
+  padding: 10px 30px;
+  min-height: 180px;
+}
+
+.contact-form .btn-submit {
+  width: 100%;
+  border-radius: 25px;
+  background: #FDDE77;
+  font-size: 18px;
+  justify-content: center;
+}
+
+.contact-form .btn-submit img {
+  margin-left: 10px;
+}
+
+/*join-our*/
+.join-our {
+  padding-bottom: 65px;
+}
+
+.join-our p {
+  max-width: 750px;
+  margin: 0 auto 40px;
+}
+
+.join-our .box-social {
+  justify-content: center;
+}
+
+.join-our .box-social li {
+  margin-left: 25px;
+}
+
+/*footer*/
+#footer .main-foot {
+  padding: 60px 0 35px;
+}
+
+#footer .main-foot img {
+  max-width: 286px;
+}
+
+#footer .main-foot p {
+  font-size: 18px;
+  color: #000;
+}
