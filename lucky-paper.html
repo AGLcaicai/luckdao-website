@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luck Dao</title>
+  <meta content="Lorem Ipsum is simply dummy text of the printing and typesetting industry" name="description">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  </head>
+  <body id="body" class="lucky-paper-page">
+    <section id="home">
+      <header id="header">
+        
+        <div class="container-fluid">
+          <div class="top-header">
+            <div class="box-logo text-center">
+              <a href="index.html">
+                <img src="images/logo.svg">
+              </a>
+            </div>
+          </div>
+          <div class="main-header" id="navbar-top">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav main-menu" id="navbar">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">LUCKY PILLARS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">GOVERNANCE</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">PARTNER</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">CONTRIBUTION</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">LUCKY PAPER</a>
+                    </li>
+                  </ul>
+                </div>
+              
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="main-banner lucky-paper">
+        <div class="thumb-img">
+          <div class="global-figure">
+            <span class="global-image">
+              <span style="background-image: url(images/banner-lucky-paper.png)">
+              </span>
+            </span>
+          </div>
+          <div class="box-text">
+            <img src="images/luckdao-paper.svg">
+            <a href="http://www.google.com">
+              DOWNLOAD
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="js/jquery-2.1.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function(){
+      window.addEventListener('scroll', function() {
+          if (window.scrollY > 50) {
+            document.getElementById('navbar-top').classList.add('fixed-top');
+            document.getElementById('main-content').classList.add('scroll');
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+          } else {
+            document.getElementById('navbar-top').classList.remove('fixed-top');
+            document.getElementById('main-content').classList.remove('scroll');
+            document.body.style.paddingTop = '0';
+          } 
+      });
+    }); 
+  </script>
+</html>

@@ -136,6 +136,10 @@ body {
   padding: 22px 0;
 }
 
+.top-header img {
+  width: 286px;
+}
+
 .main-header {
   max-width: 1420px;
   margin: 0 auto 30px;
@@ -152,6 +156,7 @@ body {
   left: 0;
   border: none;
   box-shadow: 0 4px 2px -2px #EBEAEA;
+  max-width: 100%;
 }
 
 .navbar-collapse {
@@ -166,6 +171,10 @@ body {
 
 .navbar-nav li:not(:last-child) {
   margin-right: 60px;
+}
+
+.nav-link.active {
+  color: #cd7733!important;
 }
 
 .main-banner .thumb-img {
@@ -202,9 +211,6 @@ body {
 }
 
 /*luck lottery*/
-.block-ct .sm-section-1 {
-  margin-bottom: 50px;
-}
 
 .block-ct .sm-section p:not(:last-child),
 .block-ct .sm-section ul {
@@ -215,6 +221,7 @@ body {
   list-style: disc;
   text-align: left;
   margin-left: 130px;
+  margin-bottom: 0!important;
 }
 
 .block-ct .sm-section ul li:not(:last-child) {
@@ -289,6 +296,8 @@ body {
 
 .list-pillar .item img {
   margin-bottom: 25px;
+  max-width: 100%;
+  height: 110px;
 }
 
 /*partner*/
@@ -304,6 +313,10 @@ body {
   flex: 0 0 276px;
   max-width: 276px;
   text-align: center;
+}
+
+.list-partner .box-img img {
+  max-width: 100%;
 }
 
 .list-partner .box-desc {
@@ -322,7 +335,7 @@ body {
 
 /*contact us*/
 .contact-us > p {
-  margin-bottom: 40px;
+  margin-bottom: 85px;
 }
 
 .contact-form {
@@ -427,4 +440,248 @@ body {
 #footer .main-foot p {
   font-size: 18px;
   color: #000;
+}
+
+@media (max-width: 1600px) {
+  body {
+    font-size: 20px;
+  }
+
+  .main-header {
+    max-width: 100%;
+  }
+
+  #header .container-fluid {
+    padding: 0;
+  }
+
+  .main-banner .text-desc h2 {
+    font-size: 65px;
+  }
+
+  .main-banner .text-desc h2 span {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 27px;
+    margin-bottom: 18px;
+  }
+
+  .about-us .item-sp h4 {
+    font-size: 27px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar-nav li:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  .block-ct {
+    padding: 30px 0;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .main-header {
+    max-width: 100%;
+  }
+
+  #header .container-fluid {
+    padding: 0;
+  }
+
+  .main-banner .text-desc h2 {
+    font-size: 50px;
+  }
+
+  .main-banner .text-desc h2 span {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .about-us .item-sp h4 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  .about-us .item:not(:last-child),
+  .block-ct .sm-section p:not(:last-child), 
+  .block-ct .sm-section ul,
+  .governance p:not(:last-child),
+  .join-our p,
+  .contact-us > p,
+  .partners > h3 {
+    margin-bottom: 25px;
+  }
+
+  .list-partner .item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .list-pillar .item img {
+    margin-bottom: 15px;
+  }
+
+  .list-pillar .item:not(:last-child) {
+    margin-right: 100px;
+  }
+
+  .block-ct .sm-section ul {
+    margin-left: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .list-partner .box-img {
+    flex: 0 0 190px;
+    max-width: 190px;
+  }
+
+  .list-partner .box-desc {
+    flex: 0 0 calc(100% - 190px);
+    max-width: calc(100% - 190px);
+    padding-left: 30px;
+  }
+
+  .navbar {
+    justify-content: flex-end;
+  } 
+}
+
+@media (max-width: 767px) {
+  .list-pillar .item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .list-pillar {
+    margin: 0 -15px;
+  }
+
+  .list-pillar .item {
+    padding: 0 15px;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  .main-banner .text-desc h2 {
+    font-size: 40px;
+  }
+
+  .main-banner .text-desc h2 span {
+    font-size: 25px;
+  }
+
+  .main-header {
+    margin-bottom: 0;
+  }
+
+  .top-header {
+    padding: 12px 15px 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-banner .thumb-img {
+    padding-top: 0;
+    height: 200px;
+  }
+
+  .list-partner .item > * {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 479px) {
+  .list-pillar .item {
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .list-pillar .item:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  .list-pillar .item img {
+    margin-bottom: 5px;
+  }
+}
+
+/*lucky paper*/
+.main-banner.lucky-paper .thumb-img {
+  padding-top: 0;
+}
+
+.main-banner.lucky-paper .thumb-img .global-image span {
+  background-position: top center!important
+}
+
+.main-banner.lucky-paper .thumb-img .box-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 16%;
+  text-align: center;
+}
+
+.main-banner.lucky-paper .thumb-img .box-text img {
+  width: 460px;
+  display: block;
+}
+
+.main-banner.lucky-paper .thumb-img .box-text > a {
+  margin-top: 30px;
+  background: #FDDE77;
+  color: #553515;
+  font-weight: bold;
+  border-radius: 30px;
+  font-size: 20px;
+  width: 226px;
+  height: 47px;
+  line-height: 47px;
+}
+
+.lucky-paper-page .main-header {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1600px) {
+  .main-banner.lucky-paper .thumb-img .box-text img {
+    width: 300px;
+  }
+
+  .main-banner.lucky-paper .thumb-img .box-text a {
+    font-size: 18px;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 1367px) {
+  .main-banner.lucky-paper .thumb-img .box-text img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-banner.lucky-paper .thumb-img .global-image span {
+    background-image: url(../images/banner-lucky-paper-mb.png)!important;
+  }
 }
